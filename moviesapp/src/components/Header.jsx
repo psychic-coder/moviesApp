@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
+    <div className="bg-customPurple flex justify-between items-center p-3 max-w-6xl px-auto min-w-full">
         <div className="flex gap-4">
             <MenuItem title="Home" address="/" Icon={AiFillHome} />
             <MenuItem title="About" address="/about" Icon={BsFillInfoCircleFill} />
