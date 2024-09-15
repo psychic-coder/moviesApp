@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customPurple: '#3DC2EC',
+        customPurple: '#3B14A7',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
   plugins: [],
+  darkMode:'class',
 };
