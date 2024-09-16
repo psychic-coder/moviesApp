@@ -1,8 +1,10 @@
 import React from 'react'
 
-const NavbarItem = () => {
+const NavbarItem = ({title,param}) => {
   return (
-    <div>NavbarItem</div>
+    <div>
+      
+    </div>
   )
 }
 
