@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 //the reset function is used to see the try again
-const error = ({ error, reset }) => {
+const Error = ({ error, reset }) => {
   useEffect(() => {
     console.log(error);
   }, [error]);
@@ -17,4 +17,4 @@ const error = ({ error, reset }) => {
   );
 };
 
-export default error;
+export default Error;
