@@ -1,9 +1,10 @@
 "use client";
+
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
-const NavbarItem = ({ title, param }) => {
+const NavbarItemContent = ({ title, param }) => {
   const searchParams = useSearchParams();
   const [genre, setGenre] = useState(null);
 
@@ -24,6 +25,14 @@ const NavbarItem = ({ title, param }) => {
         {title}
       </Link>
     </div>
+  );
+};
+
+const NavbarItem = ({ title, param }) => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NavbarItemContent title={title} param={param} />
+    </Suspense>
   );
 };
 
